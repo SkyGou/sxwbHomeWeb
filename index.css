@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/*------全局样式-------*/
+body,div,p,span,h1,h2,h3,h4,h5,h6,ul,li,input {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #FFF;
+    font-family: "Microsoft YaHei","微软雅黑，黑体",Arial;
+    font-size: 14px;
+}
+li { list-style: none; }
+a { color: black; }
+a:hover { color: darkred;}
+/*---------HD*style---------*/
+.hd {
+    width: 1000px;
+    height: 150px;
+    margin: 0 auto;
+    border: 1px solid saddlebrown;
+}
+.hd-bd {
+    width: 1000px;
+    height: 30px;
+    float: left;
+    padding: 5px 0;
+    border-bottom: 1px solid silver;
+}
+.hd-bd .weather,.hd-bd .sch {
+    width: 310px;
+    height: 30px;
+    line-height: 30px;
+}
+.hd-bd .weather {
+    float: left;
+}
+.hd-bd .sch {
+    float: right;
+}
+.hd-bd .sch input {
+    float: left;
+}
+.hd-bd .sch input[type=text],.hd-bd .sch input[type=button] {
+    height: 28px;
+    line-height: 28px;
+}
+.hd-bd .sch input[type=text] {
+    width: 258px;
+    text-indent: 1em;
+    border: 1px solid silver;
+    -webkit-border: 1px solid silver;
+}
+.hd-bd .sch input[type=button] {
+    width: 50px;
+    height: 30px;
+    border: 1px solid crimson;
+    -webkit-border: 1px solid crimson;
+    background: crimson url("img/search-btn.png") no-repeat center 0 ;
+    cursor: pointer;
+}
+.hd .logo {
+    width: 990px;
+    height: 106px;
+    margin: 1px 0;
+    padding: 0 5px;
+    float: left;
+    background: url("img/logo.jpg") no-repeat center;
+}
+.hd .logo a {
+    display: block;
+}
+.hd .logo .android,.hd .logo .iphone {
+    width: 159px;
+    height: 100px;
+    float: right;
+    cursor: pointer;
+}
+.hd .logo .android {
+    margin-right: 30px;
+}
+.hd .logo .iphone {
+    margin-right: 96px;
+}
