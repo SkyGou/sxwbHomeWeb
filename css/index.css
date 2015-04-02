@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/*------全局样式-------*/
+body, div, p, span, h1, h2, h3, h4, h5, h6, ul, li, input, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #FFF;
+    font-family: Microsoft YaHei, 微软雅黑，黑体, Arial, 宋体;
+    font-size: 14px;
+}
+li { list-style: none; }
+
+a {
+    color: black;
+    text-decoration: none
+}
+a:hover { color: darkred;}
+/*---------HD*style---------*/
+.hd, .ad, .ct {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.hd {
+    height: 150px;
+}
+.hd-bd {
+    width: 1000px;
+    height: 30px;
+    float: left;
+    padding: 5px 0;
+    border-bottom: 1px solid silver;
+}
+
+/* 天气预报and站内搜索 */
+.hd-bd .weather,.hd-bd .sch {
+    width: 310px;
+    height: 30px;
+    line-height: 30px;
+}
+.hd-bd .weather {
+    float: left;
+}
+.hd-bd .sch {
+    float: right;
+}
+.hd-bd .sch input {
+    float: left;
+}
+.hd-bd .sch input[type=text],.hd-bd .sch input[type=button] {
+    height: 28px;
+    line-height: 28px;
+}
+.hd-bd .sch input[type=text] {
+    width: 258px;
+    text-indent: 1em;
+    border: 1px solid silver;
+    -webkit-border: 1px solid silver;
+}
+.hd-bd .sch input[type=button] {
+    width: 50px;
+    height: 30px;
+    border: 1px solid crimson;
+    -webkit-border: 1px solid crimson;
+    background: crimson url("../img/search-btn.png") no-repeat center 0;
+    cursor: pointer;
+}
+
+/* Logo and 客户端下载 */
+.hd .logo {
+    width: 990px;
+    height: 106px;
+    margin: 1px 0;
+    padding: 0 5px;
+    float: left;
+    background: url("../img/logo.jpg") no-repeat center;
+}
+.hd .logo a {
+    display: block;
+}
+.hd .logo .android,.hd .logo .iphone {
+    width: 159px;
+    height: 100px;
+    float: right;
+    cursor: pointer;
+}
+.hd .logo .android {
+    margin-right: 30px;
+}
+.hd .logo .iphone {
+    margin-right: 96px;
+}
+
+/* 栏目导航 */
+.nav {
+    width: 986px;
+    height: 30px;
+    float: left;
+    padding: 0 7px;
+    margin: 0 0 5px 0;
+    background: crimson;
+}
+
+.nav ul li {
+    display: block;
+}
+
+.nav li {
+    width: 58px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    text-align: center;
+    background: crimson;
+}
+
+.nav li a {
+    display: block;
+    color: #FFF;
+}
+
+.nav li:hover {
+    background: salmon;
+}
+
+/* 广告条 */
+.ad {
+    height: 110px;
+    clear: both;
+    margin: 5px auto 0;
+}
+
+.ad-m-t {
+    margin-top: -25px;
+}
+
+.ad img {
+    float: left;
+}
+
+.ad-list {
+    width: 360px;
+    height: 180px;
+    float: left;
+}
+
+/* 内容区 */
+.ct-fl {
+    width: 400px;
+    float: left;
+}
+
+/* 今日头条 */
+.ct-fl .today {
+    width: 100%;
+    border-bottom: 1px solid silver;
+}
+
+.ct-fl .today h3 {
+    width: 200px;
+    line-height: 30px;
+    text-indent: 1em;
+    border-bottom: 5px solid crimson;
+}
+
+.ct-fl .today span {
+    display: block;
+    float: right;
+    margin-top: -18px;
+    margin-right: 1em;
+}
+
+.lst {
+    height: 100%;
+    display: block;
+    float: left;
+}
+
+.lst dd {
+    margin: 4px;
+}
+
+.lst dt {
+    font-size: 18px;
+}
+
+.lst dd {
+    float: left;
+    font-size: 14px;
+    text-indent: 0.5em;
+}
+
+.ct-fl .bk {
+    border-bottom: 1px dashed silver;
+}
+
+.ct-fl .digit {
+    width: auto;
+}
+
+.ct-fr {
+    width: 552px;
+    height: 260px;
+    position: relative;
+    left: 448px;
+}
+
+/*轮播图*/
+.roll {
+    width: 552px;
+    height: 260px;
+    background: url(../img/loader.gif) no-repeat center center;
+    position: relative;
+}
+
+.roll .roll-img {
+    width: 552px;
+    height: 260px;
+    position: absolute;
+    right: 0;
+}
+
+.roll .roll-img ul li {
+    position: absolute;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.roll .mask {
+    width: 552px;
+    height: 40px;
+    position: absolute;
+    top: 220px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.roll .mask li {
+    position: relative;
+    display: inline;
+    width: 12px;
+    height: 12px;
+    border-radius: 7px;
+    margin: 0 5px;
+    color: silver;
+    font-size: 9px;
+    text-decoration: none;
+    text-align: center;
+    outline: 0;
+    float: left;
+    left: 420px;
+    top: 15px;
+    background: silver;
+    cursor: pointer;
+}
+
+.roll .mask li:hover,
+.roll .mask .current {
+    background: crimson;
+}
+
+.roll .li-title {
+    width: 552px;
+    height: 30px;
+    float: left;
+}
+
+.roll .li-title ul li {
+    height: 25px;
+    display: none;
+    line-height: 25px;
+    float: left;
+}
+
+.roll .li-title li {
+    width: 400px;
+    text-align: left;
+    position: absolute;
+    top: 230px;
+    left: 20px;
+}
+
+.roll .li-title li a {
+    color: #FFF;
+}
+
+.roll #pre,
+.roll #nex {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #C0C0C0;
+    display: block;
+    position: absolute;
+    opacity: 0.45;
+}
+
+.roll #pre:hover,
+.roll #nex:hover {
+    opacity: 1;
+}
+
+.roll #pre {
+    background: url(../img/tubiao.png) no-repeat 6px -10px;
+    top: 100px;
+}
+
+.roll #nex {
+    background: url(../img/tubiao.png) no-repeat 6px -38px;
+    top: 100px;
+    left: 520px;
+}
